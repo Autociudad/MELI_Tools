@@ -93,6 +93,10 @@ htmlContent += 'if ($(\'#sectionMessages iframe\').contents().find(\'textarea\')
 htmlContent += '    $(\'#sectionMessages iframe\').contents().find(\'textarea\').val(answerText);';
 htmlContent += '    }';
 
+htmlContent += 'if ($("textarea[name=\'txtNewMessage\']:eq(0)").length != 0) {';
+htmlContent += '    $("textarea[name=\'txtNewMessage\']:eq(0)").val(answerText);';
+htmlContent += '    }';
+
 htmlContent += '}';
 
 htmlContent += 'openNav();'

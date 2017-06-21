@@ -95,6 +95,7 @@ htmlContent += '    }';
 
 htmlContent += 'if ($("textarea[name=\'txtNewMessage\']:eq(0)").length != 0) {';
 htmlContent += '    $("textarea[name=\'txtNewMessage\']:eq(0)").val(answerText);';
+htmlContent += '    $("button[class=\'ch-btn message-controls__action-primary\']").prop( "disabled", false );';
 htmlContent += '    }';
 
 htmlContent += '}';

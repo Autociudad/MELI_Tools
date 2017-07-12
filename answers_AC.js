@@ -101,6 +101,31 @@ htmlContent += '    }';
 
 htmlContent += '}';
 
+htmlContent += 'function getObjects(obj, key, val) {';
+htmlContent += '    var objects = [];';
+htmlContent += '    for (var i in obj) {';
+htmlContent += '        if (!obj.hasOwnProperty(i)) continue;';
+htmlContent += '        if (typeof obj[i] == "object") {';
+htmlContent += '            objects = objects.concat(getObjects(obj[i], key, val));';
+htmlContent += '        } else if (i == key && obj[key] == val) {';
+htmlContent += '            objects.push(obj);';
+htmlContent += '        }';
+htmlContent += '    }';
+htmlContent += '    return objects;';
+htmlContent += '}';
+
+htmlContent += 'function updatePublicationProductProductCode(article) {';
+htmlContent += '    var publicationId = article.attr("data-id").split("-")[1];';
+htmlContent += '    var urlJson = "https://api.mercadolibre.com/items/" + publicationId;';
+htmlContent += '    $.getJSON(urlJson).done(function (data) {';
+htmlContent += '        article.parent().after(getObjects(data.attributes, "id", "PART_NUMBER")[0].value_name);';
+htmlContent += '    });';
+htmlContent += '}';
+
+htmlContent += 'function updateAllPublicationsProductCode() {';
+htmlContent += '    $("article[class*=item-header]").each(function () { updatePublicationProductProductCode($(this)); });';
+htmlContent += '}';
+
 htmlContent += 'openNav();'
 
 htmlContent += '</script>';

@@ -128,6 +128,8 @@ htmlContent += '}';
 
 htmlContent += 'openNav();'
 
+htmlContent += 'updateAllPublicationsProductCode();'
+
 htmlContent += '</script>';
 
 /*

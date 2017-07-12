@@ -16,7 +16,7 @@ htmlContent += '}';
 
 htmlContent += '.overlay-content {';
 htmlContent += '    position: relative;';
-htmlContent += '    top: 25%;';
+htmlContent += '    top: 10%;';
 htmlContent += '    width: 100%;';
 htmlContent += '    text-align: center;';
 htmlContent += '    margin-top: 30px;';
@@ -55,19 +55,20 @@ htmlContent += '</style>';
 htmlContent += '<div id="myNav" class="overlay">';
 htmlContent += '  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
 htmlContent += '  <div class="overlay-content">';
-htmlContent += '    <a href="javascript:updateAnswer(\'Hola, en el catálogo del fabricante nos figura que este es el producto que aplica a tu vehículo. Tenemos el producto en stock. Esperamos tu oferta. Saludos Autociudad\');">Es el producto y stock</a>';
-htmlContent += '    <a href="javascript:updateAnswer(\'Hola, el producto es nuevo con garantía de fabrica por desperfectos de fabricacion. Esperamos tu oferta. Saludos Autociudad\');">Producto Nuevo</a>';
-htmlContent += '    <a href="javascript:updateAnswer(\'Hola, tenemos el producto en stock. Esperamos tu oferta. Saludos Autociudad\');">En Stock</a>';
+htmlContent += '    <a href="javascript:updateAnswer(\'Hola, en el catálogo del fabricante nos figura que este es el producto que aplica a tu vehículo. Tenemos el producto en stock. Esperamos tu compra. Saludos Autociudad\');">Es el producto y stock</a>';
+htmlContent += '    <a href="javascript:updateAnswer(\'Hola, el producto es nuevo con garantía de fabrica por desperfectos de fabricacion. Esperamos tu compra. Saludos Autociudad\');">Producto Nuevo</a>';
+htmlContent += '    <a href="javascript:updateAnswer(\'Hola, tenemos el producto en stock. Esperamos tu compra. Saludos Autociudad\');">En Stock</a>';
+htmlContent += '    <a href="javascript:updateAnswer(\'Hola, el artículo que corresponde a tu vehiculo es el siguiente:   Saludos Autociudad.\');">Corresponde Artículo:</a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'Hola, en este momento no tenemos disponible en stock el artículo que andas necesitando. Esperamos poder ayudarte la próxima. Saludos Autociudad.\');">No tenemos el artículo</a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'Hola, para estar seguros, te pido los codigos que figuran en tu arranque. Gracias! Saludos Autociudad.\');">Nro de Pieza STR</a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'Hola, para estar seguros, te pido los codigos que figuran en tu alternador. Gracias! Saludos Autociudad.\');">Nro de Pieza ALT</a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'Hola, para estar seguros, te pido nos pases los 17 digitos del nro de chasis (figura en la cedula verde). Gracias! Saludos Autociudad.\');">Nro de Chasis</a>';
-htmlContent += '    <a href="javascript:updateAnswer(\'Hola, desde hace un tiempo MercadoLibre sólo permite abonar utilizando MercadoPago (esto es con tarjeta o en efectivo vía Pago Fácil o similar). Saludos Autociudad\');">Formas de pago</a>';
+htmlContent += '    <a href="javascript:updateAnswer(\'Hola, MercadoLibre no permite pasar datos de contacto en las preguntas. Una vez que realices la compra y el pago recibiras todos los datos del vendedor. Saludos Autociudad.\');">ML Datos Contacto</a>';
+htmlContent += '    <a href="javascript:updateAnswer(\'Hola, desde hace un tiempo MercadoLibre sólo permite abonar utilizando MercadoPago (esto es con tarjeta o en efectivo vía Pago Fácil o similar). Saludos Autociudad\');">ML Formas de pago</a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'Podes retirarlo en persona por nuestro local en el barrio de mataderos o bien pedir envío por OCA. Saludos Autociudad.\');">Retiro / Envio</a>';
 htmlContent += '    <a href="#"><hr></a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'La dirección de retiro es Albariño 1578 - CABA (altura Av. Directorio al 5300) - Mataderos - De Lunes a Viernes de 8:00 a 12:00 y de 14:00 a 18:00. Saludos Autociudad.\');">Dirección</a>';
 htmlContent += '    <a href="javascript:updateAnswer(\'Hola, necesitas factura A o consumidor final está bien? Si necesitas factura A, pasanos un CUIT. Saludos Autociudad.\');">Factura A?</a>';
-
 
 htmlContent += '  </div>';
 htmlContent += '</div>';
